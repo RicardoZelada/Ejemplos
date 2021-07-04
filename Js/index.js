@@ -40,3 +40,7 @@ console.log(personaje_2);
 let lista = [];
 lista.push(personaje_2);
 console.log(lista);
+
+
+
+//------------------------------------------------
