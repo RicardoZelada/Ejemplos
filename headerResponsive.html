@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="Css/headerResponsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="Css/headerResponsive.css">
     <title>Header Responsive</title>
   </head>
 
@@ -32,25 +32,46 @@
 
       <h3 class="text-center">Pruebas con JavaScript - Css - Html</h3>
 
+
+
+    <section class="contenedor_slider">
+      <div class="splide" id="primary-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="Img/Banner_Moto_1920x503.jpg"></li>
+            <li class="splide__slide"><img src="Img/Banner_Colores_1920x698.jpg" alt=""></li>
+            <li class="splide__slide"><Img src="Img/Banner_Techno_1_1920x640.jpg"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="splide" id="secondary-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="Img/Banner_Moto_1920x503.jpg"></li>
+            <li class="splide__slide"><img src="Img/Banner_Colores_1920x698.jpg" alt=""></li>
+            <li class="splide__slide"><Img src="Img/Banner_Techno_1_1920x640.jpg"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     
-  
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.menu-toggle').click(function(){
-                $('.menu-toggle').toggleClass('active');
-                $('nav').toggleClass('active')
-            })
-        })
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+              $('.menu-toggle').toggleClass('active');
+              $('nav').toggleClass('active')
+          })
+      })
+    </script>
+    <script type="text/javascript" src="Js/index.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

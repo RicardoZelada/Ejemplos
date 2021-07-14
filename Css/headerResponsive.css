@@ -103,3 +103,9 @@ nav ul li a:hover{
     }
 }
 
+.contenedor_slide{
+    display: flex;
+    width: 90%;
+    height: auto;
+}
+
